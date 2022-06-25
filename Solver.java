@@ -21,9 +21,9 @@ public class Solver {
         private int manhattanNow;
 
         public Node(Board b, int m, Node p) {
-            boardNow = b;
-            prevNode = p;
-            manhattanNow = b.manhattan();
+            this.boardNow = b;
+            this.prevNode = p;
+            this.manhattanNow = this.boardNow.manhattan();
         }
 
         // I'll compare boards by their manhattan values
